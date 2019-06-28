@@ -1,0 +1,52 @@
+<nav class="navbar navbar-dark bg-dark">
+  <span class="navbar-brand">My Reminder</span>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+<ul class="menu-siderbar nav flex-column">
+  <li class="nav-item open">
+    <a href="javascript:;" class="nav-link nav-link-parent">
+      <i class="menu-icon fa fa-th"></i> AngularJS
+    </a>
+    <ul class="menu-siderbar-child nav flex-column">
+      <li class="nav-item">
+        <a routerLink="miseenplace" routerLinkActive="active" class="nav-link">
+          <i class="menu-icon fa fa-bolt"></i> Mise en place
+        </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="creerunprojet" routerLinkActive="active" class="nav-link">
+          <i class="menu-icon fa fa-bolt"></i> Créer un projet
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="javascript:;" routerLinkActive="active" class="nav-link">
+          <i class="menu-icon fa fa-bolt"></i> Préparer son projet
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a href="javascript:;" class="nav-link nav-link-parent">
+      <i class="menu-icon fa fa-th"></i> Symfony
+    </a>
+    <ul class="menu-siderbar-child nav flex-column">
+      <li class="nav-item">
+        <a href="javascript:;" class="nav-link">
+          <i class="menu-icon fa fa-bolt"></i> Symfony4
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a href="javascript:;" class="nav-link"><i class="menu-icon fa fa-envelope"></i> Contact</a>
+  </li>
+</ul>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+</div>
+
+
+
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
